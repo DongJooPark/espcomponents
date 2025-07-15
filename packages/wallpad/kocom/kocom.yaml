@@ -134,15 +134,7 @@ climate:
     max_temperature: 30 °C
     temperature_step: 1 °C
 
-  state: 
-    data: [0x30, 0xd0, 0x00, 0x36, 0x00]
-    mask: [0xff, 0xf0, 0xff, 0xff, 0xff]
-
-  state_temperature_current:
-    offset: 12
-  state_temperature_target:
-    offset: 10
-
+  # 상태는 오직 OFF / HEAT만 판단
   state_off:
     offset: 8
     data: [0x00]
@@ -152,6 +144,12 @@ climate:
     offset: 8
     data: [0x10]
     mask: [0xf0]
+
+  state_temperature_current:
+    offset: 12
+
+  state_temperature_target:
+    offset: 10
 
   command_off: !lambda |-
     return {{0x30, 0xbc, 0x00, 0x36, 0x00, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00},
