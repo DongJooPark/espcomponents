@@ -133,9 +133,14 @@ climate:
     min_temperature: 5 °C
     max_temperature: 30 °C
     temperature_step: 1 °C
-  state_lambda: |-
-    if (x[8] == 0x10) return CLIMATE_MODE_HEAT;
-    else return CLIMATE_MODE_OFF;
+  state_off:
+    offset: 8
+    data: [0x11]
+    mask: [0xff]
+  state_heat:
+    offset: 8
+    data: [0x10]
+    mask: [0xf0]
   state_temperature_current:
     offset: 12
     length: 1
@@ -168,9 +173,14 @@ climate:
     min_temperature: 5 °C
     max_temperature: 30 °C
     temperature_step: 1 °C
-  state_lambda: |-
-    if (x[8] == 0x10) return CLIMATE_MODE_HEAT;
-    else return CLIMATE_MODE_OFF;
+  state_off:
+    offset: 8
+    data: [0x11]
+    mask: [0xff]
+  state_heat:
+    offset: 8
+    data: [0x10]
+    mask: [0xf0]
   state_temperature_current:
     offset: 12
     length: 1
@@ -203,9 +213,14 @@ climate:
     min_temperature: 5 °C
     max_temperature: 30 °C
     temperature_step: 1 °C
-  state_lambda: |-
-    if (x[8] == 0x10) return CLIMATE_MODE_HEAT;
-    else return CLIMATE_MODE_OFF;
+  state_off:
+    offset: 8
+    data: [0x11]
+    mask: [0xff]
+  state_heat:
+    offset: 8
+    data: [0x10]
+    mask: [0xf0]
   state_temperature_current:
     offset: 12
     length: 1
@@ -238,9 +253,14 @@ climate:
     min_temperature: 5 °C
     max_temperature: 30 °C
     temperature_step: 1 °C
-  state_lambda: |-
-    if (x[8] == 0x10) return CLIMATE_MODE_HEAT;
-    else return CLIMATE_MODE_OFF;
+  state_off:
+    offset: 8
+    data: [0x11]
+    mask: [0xff]
+  state_heat:
+    offset: 8
+    data: [0x10]
+    mask: [0xf0]
   state_temperature_current:
     offset: 12
     length: 1
@@ -273,9 +293,14 @@ climate:
     min_temperature: 5 °C
     max_temperature: 30 °C
     temperature_step: 1 °C
-  state_lambda: |-
-    if (x[8] == 0x10) return CLIMATE_MODE_HEAT;
-    else return CLIMATE_MODE_OFF;
+  state_off:
+    offset: 8
+    data: [0x11]
+    mask: [0xff]
+  state_heat:
+    offset: 8
+    data: [0x10]
+    mask: [0xf0]
   state_temperature_current:
     offset: 12
     length: 1
