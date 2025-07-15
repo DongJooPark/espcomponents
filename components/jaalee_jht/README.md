@@ -1,7 +1,7 @@
 ### add esphome *.yaml
 ```
 external_components:
-  - source: github://DongJooPark/espcomponents
+  - source: github://eigger/espcomponents
     components: [ jaalee_jht ]
 
 esp32_ble_tracker:
