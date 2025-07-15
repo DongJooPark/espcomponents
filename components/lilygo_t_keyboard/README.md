@@ -1,7 +1,7 @@
 ### add esphome *.yaml
 ```
 external_components:
-  - source: github://eigger/espcomponents
+  - source: github://DongJooPark/espcomponents
     components: [ lilygo_t_keyboard ]
 
 lilygo_t_keyboard:
