@@ -3,7 +3,7 @@
 packages:
   remote:
     refresh: always
-    url: https://github.com/eigger/espcomponents/
+    url: https://github.com/DongJooPark/espcomponents/
     files:
       - packages/hvac/samsung/samsung_system.yaml
 ```
