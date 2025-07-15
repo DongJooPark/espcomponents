@@ -1,7 +1,7 @@
 ### add esphome *.yaml
 ```
 external_components:
-  - source: github://DongJooPark/espcomponents
+  - source: github://eigger/espcomponents
     components: [ bbq10_keyboard ]
 
 i2c:
