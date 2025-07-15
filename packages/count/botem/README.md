@@ -3,7 +3,7 @@
 packages:
   remote:
     refresh: always
-    url: https://github.com/DongJooPark/espcomponents/
+    url: https://github.com/eigger/espcomponents/
     files:
       - packages/count/botem/botem_csm505.yaml
 ```
