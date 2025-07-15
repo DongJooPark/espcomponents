@@ -1,7 +1,7 @@
 ## uartex
 ```
 external_components:
-  - source: github://pdj4425/espcomponents@latest
+  - source: github://DongJooPark/espcomponents@latest
     components: [ uartex ]
     refresh: always
 ```
