@@ -7,7 +7,7 @@ Read : service_uuid: '49535343-FE7D-4AE5-8FA9-9FAFD205E455' characteristic_uuid:
 
 ```
 external_components:
-  - source: github://eigger/espcomponents
+  - source: github://DongJooPark/espcomponents
     components: [ divoom ]
 
 ble_client:
