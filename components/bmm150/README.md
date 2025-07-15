@@ -1,6 +1,6 @@
 ```
 external_components:
-  - source: github://eigger/espcomponents/releases/latest
+  - source: github://DongJooPark/espcomponents/releases/latest
     components: [ bmm150 ]
     refresh: always
 
