@@ -136,7 +136,7 @@ climate:
   # 상태는 오직 OFF / HEAT만 판단
   state_off:
     offset: 8
-    data: [0x00]
+    data: [0x11]
     mask: [0xff]
   state_heat:
     offset: 8
@@ -176,7 +176,7 @@ climate:
     temperature_step: 1 °C
   state_off:
     offset: 8
-    data: [0x00]
+    data: [0x11]
     mask: [0xff]
   state_heat:
     offset: 8
@@ -216,7 +216,7 @@ climate:
     temperature_step: 1 °C
   state_off:
     offset: 8
-    data: [0x00]
+    data: [0x11]
     mask: [0xff]
   state_heat:
     offset: 8
@@ -252,7 +252,7 @@ climate:
     temperature_step: 1 °C
   state_off:
     offset: 8
-    data: [0x00]
+    data: [0x11]
     mask: [0xff]
   state_heat:
     offset: 8
@@ -288,7 +288,7 @@ climate:
     temperature_step: 1 °C
   state_off:
     offset: 8
-    data: [0x00]
+    data: [0x11]
     mask: [0xff]
   state_heat:
     offset: 8
