@@ -2,7 +2,7 @@
 external_components:
   - source:
       type: git
-      url: https://github.com/eigger/espcomponents/
+      url: https://github.com/DongJooPark/espcomponents/
       ref: dev
     components: [ axp192 ]
     refresh: always
