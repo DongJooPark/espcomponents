@@ -140,18 +140,16 @@ climate:
       offset: 12
     state_temperature_target:
       offset: 10
-    state_off:
-      offset: 8
-      data: [0x00]
-      mask: [0xf0]
-    state_heat:
-      offset: 8
-      data: [0x10]
-      mask: [0xf0]
-    state_preset_away:
+    state_off: # 기존 state_preset_away를 대체
       offset: 9
       data: [0x01]
-    state_preset_none:
+    state_heat: # 기존 state_preset_none을 대체
+      offset: 9
+      data: [0x00]
+    state_preset_away: # 이 항목은 이제 더 이상 모드 상태를 나타내지 않습니다.
+      offset: 9
+      data: [0x01]
+    state_preset_none: # 이 항목은 이제 더 이상 모드 상태를 나타내지 않습니다.
       offset: 9
       data: [0x00]
     command_off: !lambda |-
