@@ -142,20 +142,10 @@ climate:
       offset: 12
       length: 1
       precision: 0
-    state_temperature_target: !lambda |-
-      float recv_temp = data[10];
-      float cur_target = id(livingroom_heater).target_temperature;
-      if (!std::isnan(cur_target) && (int)cur_target == (int)recv_temp) {
-        return cur_target;
-      }
-      return recv_temp;
-    
-    
-    
-    #state_temperature_target:
-      #offset: 10
-      #length: 1
-      #precision: 0
+    state_temperature_target:
+      offset: 10
+      length: 1
+      precision: 0
 
     # -------------------------------------------------------------
     # [최종 복구] 과거 파이썬 규칙(1101 = OFF)을 ESPHome 문법으로 완벽 복구
@@ -231,20 +221,11 @@ climate:
       offset: 12
       length: 1
       precision: 0
-    state_temperature_target: !lambda |-
-      float recv_temp = data[10];
-      float cur_target = id(bedroom_heater).target_temperature;
-      if (!std::isnan(cur_target) && (int)cur_target == (int)recv_temp) {
-        return cur_target;
-      }
-      return recv_temp;
-    
-    
-    
-    #state_temperature_target:
-      #offset: 10
-      #length: 1
-      #precision: 0
+   
+    state_temperature_target:
+      offset: 10
+      length: 1
+      precision: 0
 
     # -------------------------------------------------------------
     # [최종 복구] 과거 파이썬 규칙(1101 = OFF)을 ESPHome 문법으로 완벽 복구
@@ -317,21 +298,12 @@ climate:
       offset: 12
       length: 1
       precision: 0
-    state_temperature_target: !lambda |-   # <-- 위 줄(state_temperature_current:)과 세로 줄을 정확히 맞춰주세요!
-      float recv_temp = data[10];
-      float cur_target = id(room_1_heater).target_temperature;
-      if (!std::isnan(cur_target) && (int)cur_target == (int)recv_temp) {
-        return cur_target;
-      }
-      return recv_temp;
 
-   
     
-    
-    #state_temperature_target:
-      #offset: 10
-      #length: 1
-      #precision: 0
+    state_temperature_target:
+      offset: 10
+      length: 1
+      precision: 0
 
     # -------------------------------------------------------------
     # [최종 복구] 과거 파이썬 규칙(1101 = OFF)을 ESPHome 문법으로 완벽 복구
@@ -419,22 +391,11 @@ climate:
       offset: 12
       length: 1
       precision: 0
-    state_temperature_target: !lambda |-
-      float recv_temp = data[10];
-      float cur_target = id(room_2_heater).target_temperature;
-      if (!std::isnan(cur_target) && (int)cur_target == (int)recv_temp) {
-        return cur_target;
-      }
-      return recv_temp;
-  
-    
-    
-    
-    
-    #state_temperature_target:
-      #offset: 10
-      #length: 1
-      #precision: 0
+
+    state_temperature_target:
+      offset: 10
+      length: 1
+      precision: 0
 
     # -------------------------------------------------------------
     # [최종 복구] 과거 파이썬 규칙(1101 = OFF)을 ESPHome 문법으로 완벽 복구
@@ -528,21 +489,10 @@ climate:
       offset: 12
       length: 1
       precision: 0
-    state_temperature_target: !lambda |-
-      float recv_temp = data[10];
-      float cur_target = id(livingroom_2_heater).target_temperature;
-      if (!std::isnan(cur_target) && (int)cur_target == (int)recv_temp) {
-        return cur_target;
-      }
-      return recv_temp;
-    
-    
-    
-    
-    #state_temperature_target:
-      #offset: 10
-      #length: 1
-      #precision: 0
+    state_temperature_target:
+      offset: 10
+      length: 1
+      precision: 0
 
     # -------------------------------------------------------------
     # [최종 복구] 과거 파이썬 규칙(1101 = OFF)을 ESPHome 문법으로 완벽 복구
